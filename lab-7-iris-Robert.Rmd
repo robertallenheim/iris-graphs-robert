@@ -1,0 +1,25 @@
+---
+title: "Lab-7-iris-Robert"
+author: "Robert Heim"
+date: "11/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+```
+
+```{r}
+
+iris_graph <- ggplot(iris, aes(x= Petal.Length, y= Petal.Width)) +
+  geom_point()
+
+iris_graph
+
+```
+
